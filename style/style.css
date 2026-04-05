@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    max-width: 100%;
     box-sizing: border-box;
 
     font-family: 'Times New Roman', Times, serif;
@@ -26,23 +25,29 @@ h2 {
 }
 
 ul {
+    margin: 12px 40px; 
+}
+
+ol {
     margin: 12px 40px;
-    
 }
 
 li {
     margin: 5px;
-    font-size: large;
+    text-decoration: none;
 }
 
 li::marker {
     color: darkred;
 }
 
-a {
+a,
+p,
+li
+ {
     color: black;
-    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
 a:hover {
@@ -51,9 +56,41 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+}
+
 .index {
     display: block;
     float: left;
     width: 50%;
     margin: 20px auto;
+}
+
+.home {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    background-color: bisque;
+    font-size: 1.5rem;
+    border: 2px solid darkred;
+    padding: 10px;
+}
+
+.show {
+    display: inline-block;
+    width: 100%;
+}
+
+.show div {
+    float: inline-end;
+    margin-right: 30px;
+}
+
+#description {
+    float: left;
+    width: max-content;
+    margin-left: 20px;
 }
