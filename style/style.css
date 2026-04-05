@@ -85,12 +85,11 @@ img {
 }
 
 .show div {
-    float: inline-end;
+    float: right;
     margin-right: 30px;
 }
 
 #description {
     float: left;
-    width: max-content;
     margin-left: 20px;
 }
